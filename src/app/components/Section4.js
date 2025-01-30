@@ -17,13 +17,13 @@ function Section4() {
 
                 </div>
                 <div className='bg-[#0B3A4F] relative'>
-                <img src="one.png" alt=""  className='absolute left-12 top-8'/>
+                <img src="two.png" alt=""  className='absolute left-12 top-8'/>
 
                     <p className='text-white text-[28px] text-center p-20 rounded-[7px]'>database<br/>
                     administration</p>
 
                 </div> <div className='bg-[#0B3A4F] relative'>
-                <img src="one.png" alt=""  className='absolute left-12 top-8'/>
+                <img src="three.png" alt=""  className='absolute left-12 top-8'/>
 
                     <p className='text-white text-[28px] text-center p-20 rounded-[7px]'>database<br/>
                     administration</p>
