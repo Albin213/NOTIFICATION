@@ -4,7 +4,7 @@ function Section4() {
   return (
     <div className='bg-[#023347] px-4 sm:px-[30px] lg:px-[74px] py-12'>
         <h1 className='font-normal text-[34px] sm:text-[40px] lg:text-[50px] text-white text-center pb-12 jomolhari-regular'>Database Service Page</h1>
-        <p className='text-white font-normal text-[24px] sm:text-[26px] lg:text-[30px] leading-[45px] poppins-regular'>
+        <p className='text-white font-normal text-[24px] sm:text-[26px] lg:text-[30px] leading-[45px] poppins-regular text-justify'>
             our additional database services provide critical support for buisnesses needing secure,
              optimized. and accessible data. From SQL administration to advanced trobleshooting, 
             we offer solutions that keep your database efficiently.</p>
