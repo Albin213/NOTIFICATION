@@ -40,11 +40,11 @@ function Navbar() {
     <div className="w-full">
       {/* Navbar Header */}
       <div className="w-full h-[100px] bg-white flex items-center justify-between px-[30px] lg:px-[74px] drop-shadow-md z-50">
-        <div className="font-normal text-[32px] text-[#181717]">Apttiv</div>
+        <div className="font-normal text-[32px] text-[#181717] kadwa-regular">Apttiv</div>
 
         {/* Navigation Links - Visible on larger screens */}
         <div className="hidden md:flex ">
-          <ul className="text-[24px] font-normal flex gap-10">
+          <ul className="text-[24px] font-normal flex gap-10 jomolhari-regular">
             {navItems.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -72,7 +72,7 @@ function Navbar() {
         </button>
 
         {/* Drawer Navigation Links */}
-        <ul className="mt-20 space-y-6 text-[24px] font-normal text-white">
+        <ul className="mt-20 space-y-6 text-[24px] font-normal text-white jomolhari-regular">
           {navItems.map((item) => (
             <li key={item} onClick={toggleDrawer} className="cursor-pointer hover:text-gray-500">
               {item}
