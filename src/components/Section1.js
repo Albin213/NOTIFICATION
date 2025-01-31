@@ -5,6 +5,7 @@ function Section1() {
     <div className='relative flex flex-col lg:flex-row px-4 sm:px-[30px] lg:px-[74px] pt-14'>
         {/* <img src="vector 8.png" alt="" className='absolute left-[550px] -top-5 '  /> */}
         {/* <img src="vector 8.png" alt="" className='absolute left-[850px] -top-5 '  /> */}
+      
         <div className='w-full lg:w-[60%] xl:w-[73%] '>
         <h1 className='font-normal text-[44px] lg:text-[54px] xl:text-[64px] 2xl:text-[74px] text-[#201E1E] jomolhari-regular'>
         Empowering Your<br/>
