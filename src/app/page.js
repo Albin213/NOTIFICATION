@@ -8,13 +8,17 @@ import Section5 from '../components/Section5'
 
 function page() {
   return (
-    <div className='bg-[#F7FBFB]'>
-      <Navbar/>
+    <div className='bg-[#F7FBFB] '>
+     <div className='bg-img  xl:bg-contain'>
+       <Navbar/>
       <Section1/>
       <div className='mt-10 lg:mt-32'>
       <Section2/>
       </div>
+     </div>
+      <div className='bg-image bg-cover  xl:bg-contain 2xl:bg-cover'>
       <Section3/>
+      </div>
       <Section4/>
       <div className='mt-10 lg:mt-32'>
       <Section5/>

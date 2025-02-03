@@ -2,11 +2,11 @@ import React from "react";
 
 function Section3() {
   return (
-    <div className="px-4 sm:px-[30px] lg:px-[74px] pt-12">
+    <div className="px-4 sm:px-[30px] lg:px-[74px] pt-12 ">
       <h1 className="font-normal text-[30px] sm:text-[40px] lg:text-[50px] text-[#222020] text-center jomolhari-regular">
         What Is PI System Consulting?
       </h1>
-      <p className="text-[22px] sm:text-[26px] lg:text-[28px] font-normal leading-10 pt-8 md:pt-16 px-8 xl:px-0 poppins-regular text-justify">
+      <p className="text-[22px] sm:text-[26px] lg:text-[28px] font-normal leading-10 pt-8 md:pt-16 px-8 xl:px-0 poppins-regular sm:text-justify capitalize">
         we know the value of accurate, real-time data in maintaining efficient
         operation. Our OSI soft PI System consulting services offer customized
         support across the lifecycle of your PI system, from initial setup and
@@ -15,21 +15,21 @@ function Section3() {
         other industrial sectors to make the most of their operational data.
       </p>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-6 mt-40 poppins-regular">
-        <div className="font-normal text-[27px] text-[#012333] bg-[#E9F2F4] p-16 text-center rounded-[7px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-6 mt-10 sm:mt-40 poppins-regular">
+        <div className="font-normal text-[20px] sm:text-[27px] text-[#012333] bg-[#E9F2F4] p-16 text-center rounded-[7px] drop-shadow-md">
           <h1>
             System Architecture
             <br /> & <br /> Design
           </h1>
         </div>
-        <div className="font-normal text-[27px] text-[#012333] bg-[#E9F2F4] p-16 text-center rounded-[7px]">
+        <div className="font-normal text-[20px] sm:text-[27px] text-[#012333] bg-[#E9F2F4] p-16 text-center rounded-[7px] drop-shadow-md">
           <h1>
             Implementation <br />
             &<br />
             Configuration
           </h1>
         </div>
-        <div className="font-normal text-[27px] text-[#012333] bg-[#E9F2F4] p-16 text-center rounded-[7px]">
+        <div className="font-normal text-[20px] sm:text-[27px] text-[#012333] bg-[#E9F2F4] p-16 text-center rounded-[7px] drop-shadow-md">
           <h1>
             Troubleshooting
             <br />
@@ -37,26 +37,26 @@ function Section3() {
             Support
           </h1>
         </div>
-        <div className="font-normal text-[27px] text-[#012333] bg-[#E9F2F4] p-16 text-center rounded-[7px]">
+        <div className="font-normal text-[20px] sm:text-[27px] text-[#012333] bg-[#E9F2F4] p-16 text-center rounded-[7px] drop-shadow-md">
           <h1>
             Performance
             <br /> Optimization
           </h1>
         </div>
-        <div className="font-normal text-[27px] text-[#012333] bg-[#E9F2F4] p-16 text-center rounded-[7px]">
+        <div className="font-normal text-[20px] sm:text-[27px] text-[#012333] bg-[#E9F2F4] p-16 text-center rounded-[7px] drop-shadow-md">
           <h1>
             Training
             <br /> & <br /> Knowledge
           </h1>
         </div>
-        <div className="font-normal text-[27px] text-[#012333] bg-[#E9F2F4] p-16 text-center rounded-[7px]">
+        <div className="font-normal text-[20px] sm:text-[27px] text-[#012333] bg-[#E9F2F4] p-16 text-center rounded-[7px] drop-shadow-md">
           <h1>
             Training <br /> & <br /> Knowledge
           </h1>
         </div>
       </div>
-      <p className="text-[22px] sm:text-[26px] lg:text-[30px] font-normal leading-10 pt-8 md:pt-16 pb-44 poppins-regular text-justify">
-      energy, manufacturing, utilities, water treatment, and other data-intensive industries benefit from our PI system expertise.</p>
+      <p className="text-[22px] sm:text-[26px] lg:text-[30px] font-normal leading-10 pt-8 md:pt-16 pb-10 sm:pb-44 poppins-regular sm:text-justify capitalize">
+      Energy, manufacturing, utilities, water treatment, and other data-intensive industries benefit from our PI system expertise.</p>
     </div>
   );
 }

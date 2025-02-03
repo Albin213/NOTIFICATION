@@ -20,7 +20,18 @@
     font-weight: 400;
     font-style: normal;
   }
-.bg-vector{
-  background-image: url("/vector 8.png")
+.bg-img{
+  background-image: url("/bg-img.png");
+  background-repeat: no-repeat;
+  /* background-size:contain; */
+
+}
+
+.bg-image{
+  background-image: url("/bg-image.jpeg");
+  background-repeat: no-repeat;
+  /* background-size:contain; */
+  background-position: center -280px;
+
 }
   

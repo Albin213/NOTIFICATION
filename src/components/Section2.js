@@ -8,7 +8,7 @@ function Section2() {
             <img src="vector 10.png" alt="" className='absolute left-0 bottom-0' />
 
             <h1 className=' text-[30px] md:text-[44px] text-[#05525F] font-normal pe-20 sm:pe-0 jomolhari-regular'>Know More About Apptiv.</h1>
-            <p className='text-[#1B1A1A]  text-[20px] sm:text-[26px] pt-8 sm:pt-14 pb-20 sm:pb-14 font-normal leading-10  poppins-regular text-justify'>
+            <p className='text-[#1B1A1A]  text-[20px] sm:text-[26px] pt-8 sm:pt-14 pb-20 sm:pb-14 font-normal leading-10  poppins-regular sm:text-justify capitalize'>
                 Apttiv is your partner in achieving operational excellence.
                  as specialists in OSI soft PI system consulting, we deliver tailored solutions
                   that allow you to harness real-time data, streamline processes, and make informed decisions. 
