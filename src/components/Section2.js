@@ -3,7 +3,7 @@ import React from 'react'
 function Section2() {
   return (
     <div className='px-4 sm:px-[30px] lg:px-[74px] py-10  drop-shadow-xl '>
-        <div className='bg-white rounded-[34px] px-10 sm:px-24 xl:px-36 py-12 relative'>
+        <div className='bg-white rounded-[34px] px-6 sm:px-24 xl:px-36 py-12 relative'>
             <img src="right.png" alt="" className='absolute right-0 top-0' />
             <img src="left.png" alt="" className='absolute left-0 bottom-0' />
 
