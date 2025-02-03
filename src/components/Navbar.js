@@ -122,7 +122,7 @@ function Navbar() {
   return (
     <div className="w-full">
       {/* Navbar Header */}
-      <div className="w-full h-[100px] bg-white flex items-center justify-between px-[30px] lg:px-[74px] drop-shadow-md z-50">
+      <div className="w-full h-[100px] bg-white flex items-center justify-between px-4 sm:px-[30px] lg:px-[74px] drop-shadow-md z-50">
       <Link href={"/"} className="">
 
         <div className="font-normal text-[32px] text-[#181717] kadwa-regular cursor-pointer">Apttiv</div>
