@@ -2,9 +2,9 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='py-20 relative'>
-      <img src="/footerone.svg" alt="" className='absolute left-0 -top-6' />
-      <img src="/footertwo.svg" alt="" className='absolute right-0 -bottom-4' />
+    <div className='py-20 relative bg-white'>
+      {/* <img src="/footerone.svg" alt="" className='absolute left-0 -top-6' />
+      <img src="/footertwo.svg" alt="" className='absolute right-0 -bottom-4' /> */}
 
         <h1 className='text-[20px] sm:text-[24px] lg:text-[28px] xl:text-[34px] text-[#222020] jomolhari-regular text-center px-12 sm:px-24'>“GET IN TOUCH WITH OUR EXPERTS”</h1>
 
