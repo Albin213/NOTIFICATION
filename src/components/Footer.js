@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Footer() {
+function Footer( { openPopup }) {
   return (
     <div className='py-20 relative bg-white'>
       {/* <img src="/footerone.svg" alt="" className='absolute left-0 -top-6' />
@@ -25,8 +25,8 @@ function Footer() {
           </div>
           <div className='lg:border-l-2 border-[#023347] lg:ps-6'>
             <h1 className='text-[#023347] text-[18px] xl:text-[26px] poppins-regular'>Company</h1>
-            <p className='text-[16px] xl:text-[18px] leading-3 text-black pt-6'>PI System Consulting</p>
-            <p className='text-[16px] xl:text-[18px] leading-3  text-black pt-6'>Database Administration</p>
+            <p className='text-[16px] xl:text-[18px] leading-3 text-black pt-6'>About</p>
+            <p className='text-[16px] xl:text-[18px] leading-3  text-black pt-6' onClick={ openPopup }>Contact Us</p>
           </div>
          <div>
          <div className='flex gap-4  items-center pb-4 pt-2' >
