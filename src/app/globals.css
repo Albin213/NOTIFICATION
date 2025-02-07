@@ -35,3 +35,20 @@
 
 }
   
+
+.section5-bg{
+  background-image: url("/bg-img.svg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center -280px;
+
+}
+
+
+.section5-bg-img{
+  background-image: url("/bg-img.svg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center -30px;
+
+}

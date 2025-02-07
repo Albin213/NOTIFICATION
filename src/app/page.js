@@ -5,6 +5,7 @@ import Section2 from '../components/Section2'
 import Section3 from '../components/Section3'
 import Section4 from '../components/Section4'
 import Section5 from '../components/Section5'
+import Footer from '@/components/Footer'
 
 function page() {
   return (
@@ -20,9 +21,10 @@ function page() {
       <Section3/>
       </div>
       <Section4/>
-      <div className='mt-10 lg:mt-32'>
+      <div className=''>
       <Section5/>
       </div>
+      <Footer/>
       
     </div>
   )

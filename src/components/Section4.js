@@ -73,7 +73,7 @@ function Section4() {
   }, [visible]);
 
   return (
-    <div className="bg-[#023347] px-4 sm:px-[30px] lg:px-[74px] py-12">
+    <div className="bg-[#023347] px-4 sm:px-[30px] lg:px-[74px] py-16">
       {/* Header */}
       <h1 className="font-normal text-[34px] sm:text-[40px] lg:text-[50px] text-white text-center pb-12 jomolhari-regular">
         Database Service Page
