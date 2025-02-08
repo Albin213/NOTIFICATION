@@ -1,9 +1,9 @@
 import React from "react";
 
-function ContactUs() {
+function ContactUsPopUp() {
   return (
-    <div className=" w-full h-full flex justify-center items-center text-white px-4 md:px-0">
-      <div className="w-full md:w-[750px] h-[450px] sm:h-[550px] md:h-[620px] bg-[#023347] py-8 pt-12 sm:py-16 rounded-[24px] px-6 sm:px-16">
+    <div className=" w-full h-full flex justify-center items-center text-white px-4 md:px-0 " >
+      <div className="w-full md:w-[750px] h-[450px] sm:h-[550px] md:h-[620px] bg-[#023347] py-8 pt-12 sm:py-16 rounded-[24px] px-6 sm:px-16 popup-bg">
         <h1 className="text-white text-[28px] sm:text-[38px] text-center">
           Connect With Us
         </h1>
@@ -46,4 +46,4 @@ function ContactUs() {
   );
 }
 
-export default ContactUs;
+export default ContactUsPopUp;

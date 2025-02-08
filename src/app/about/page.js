@@ -6,10 +6,10 @@ import React from 'react'
 function page() {
   return (
     <div className='bg-[#05525F] w-full h-full  aboutpage-bg '>
-    <Navbar/>
-    <h1 className='px-4 sm:px-[30px] lg:px-[74px] mt-20 text-[30px] md:text-[44px] text-white font-normal pe-20 sm:pe-0 jomolhari-regular'>Know More About Apptiv.</h1>
+   
+    <h1 className='px-4 sm:px-[30px] lg:px-[74px]  text-[30px] md:text-[44px] text-white font-normal pe-20 sm:pe-0 jomolhari-regular pt-4'>Know More About Apptiv.</h1>
 
-    <div className='px-4 sm:px-[30px] lg:px-[74px] py-10  drop-shadow-xl '>
+    <div className='px-4 sm:px-[30px] lg:px-[74px] py-10  drop-shadow-xl pb-16 xl:pb-32'>
         <div className='bg-white rounded-[34px] px-6 sm:px-24 xl:px-28 py-12 relative'>
             <img src="right.png" alt="" className='absolute right-0 top-0' />
             <img src="left.png" alt="" className='absolute left-0 bottom-0' />
@@ -24,9 +24,7 @@ function page() {
         </div>
         
     </div>
-    <div className= 'pt-16 xl:pt-32'>
-    <Footer/>
-    </div>
+  
 </div>
   )
 }
