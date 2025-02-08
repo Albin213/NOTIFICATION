@@ -209,7 +209,7 @@ function Section3() {
             visible.has(5) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h1>Training<br/> &<br/> Knowledge</h1>
+          <h1>Mobile App<br/> Developement</h1>
         </div>
       </div>
 

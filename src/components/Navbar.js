@@ -184,12 +184,105 @@
 // export default Navbar;
 
 
+// "use client";
+// import React, { useState } from "react";
+// import Link from "next/link";
+
+// function Navbar({ openPopup }) {
+//   const [drawerOpen, setDrawerOpen] = useState(false);
+
+//   const toggleDrawer = () => {
+//     setDrawerOpen(!drawerOpen);
+//     document.body.style.overflow = drawerOpen ? "auto" : "hidden"; // Toggle scrolling
+//   };
+
+//   const navItems = [
+//     { name: "Home", link: "/" },
+//     { name: "About", link: "/about" },
+//     { name: "Service", link: "/service" },
+//     { name: "Contact", action: openPopup }, // Call popup function for "Contact"
+//   ];
+
+//   return (
+//     <div className="w-full">
+//       <div className="w-full h-[100px] bg-white flex items-center justify-between px-4 sm:px-[30px] lg:px-[74px] drop-shadow-md z-50">
+//         <Link href={"/"}>
+//           <div className="font-normal text-[32px] text-[#181717] kadwa-regular cursor-pointer">
+//             Apttiv
+//           </div>
+//         </Link>
+
+//         <div className="hidden md:flex">
+//           <ul className="text-[24px] font-normal flex gap-10 jomolhari-regular">
+//             {navItems.map((item) => (
+//               <li
+//                 key={item.name}
+//                 onClick={item.action || null}
+//                 className={`cursor-pointer hover:text-gray-500 ${item.action ? "text-[#181717]" : ""}`}
+//               >
+//                 {item.link ? <Link  href={item.link}>{item.name}</Link> : item.name}
+//               </li>
+//             ))}
+//           </ul>
+//         </div>
+
+//         <div className="md:hidden">
+//           <button onClick={toggleDrawer} className="text-black text-3xl">
+//             {drawerOpen ? "✖" : "☰"}
+//           </button>
+//         </div>
+//       </div>
+
+//       {/* Drawer for Small Screens */}
+//       <div
+//         className={`fixed top-0 right-0 w-[75%] sm:w-[60%] bg-[#05525F] h-full p-6 shadow-lg transform transition-transform duration-300 ease-in-out ${
+//           drawerOpen ? "translate-x-0" : "translate-x-full"
+//         } z-40`}
+//       >
+//         <button onClick={toggleDrawer} className="text-white text-5xl absolute rotate-45 top-4 right-4">
+          
+//         </button>
+
+//         <ul className="mt-20 space-y-6 text-[24px] font-normal text-white jomolhari-regular">
+//           {navItems.map((item) => (
+//             <li
+//               key={item.name}
+//               onClick={() => {
+//                 toggleDrawer();
+//                 if (item.action) item.action();
+//               }}
+//               className="cursor-pointer hover:text-gray-300"
+//             >
+//               {item.link ? <Link href={item.link}>{item.name}</Link> : item.name}
+//             </li>
+//           ))}
+//         </ul>
+//       </div>
+
+//       {drawerOpen && (
+//         <div
+//           className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-30"
+//           onClick={toggleDrawer}
+//         ></div>
+//       )}
+//     </div>
+//   );
+// }
+
+// export default Navbar;
+
+
+
+
+
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation"; // Import usePathname to detect the current route
 
 function Navbar({ openPopup }) {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const pathname = usePathname(); // Get the current route
 
   const toggleDrawer = () => {
     setDrawerOpen(!drawerOpen);
@@ -197,9 +290,10 @@ function Navbar({ openPopup }) {
   };
 
   const navItems = [
+    { name: "Home", link: "/" },
     { name: "About", link: "/about" },
     { name: "Service", link: "/service" },
-    { name: "Contact", action: openPopup }, // Call popup function for "Contact"
+    { name: "Contact", action: openPopup }, // Open popup for "Contact"
   ];
 
   return (
@@ -211,20 +305,24 @@ function Navbar({ openPopup }) {
           </div>
         </Link>
 
+        {/* Desktop Navigation */}
         <div className="hidden md:flex">
           <ul className="text-[24px] font-normal flex gap-10 jomolhari-regular">
             {navItems.map((item) => (
               <li
                 key={item.name}
                 onClick={item.action || null}
-                className={`cursor-pointer hover:text-gray-500 ${item.action ? "text-[#181717]" : ""}`}
+                className={`cursor-pointer hover:text-gray-500 ${
+                  item.link === pathname ? "border-b-2 border-[#05525F] text-[#05525F]" : ""
+                }`}
               >
-                {item.link ? <Link  href={item.link}>{item.name}</Link> : item.name}
+                {item.link ? <Link href={item.link}>{item.name}</Link> : item.name}
               </li>
             ))}
           </ul>
         </div>
 
+        {/* Drawer Toggle Button */}
         <div className="md:hidden">
           <button onClick={toggleDrawer} className="text-black text-3xl">
             {drawerOpen ? "✖" : "☰"}
@@ -232,14 +330,14 @@ function Navbar({ openPopup }) {
         </div>
       </div>
 
-      {/* Drawer for Small Screens */}
+      {/* Mobile Drawer Navigation */}
       <div
         className={`fixed top-0 right-0 w-[75%] sm:w-[60%] bg-[#05525F] h-full p-6 shadow-lg transform transition-transform duration-300 ease-in-out ${
           drawerOpen ? "translate-x-0" : "translate-x-full"
         } z-40`}
       >
         <button onClick={toggleDrawer} className="text-white text-5xl absolute rotate-45 top-4 right-4">
-          
+          +
         </button>
 
         <ul className="mt-20 space-y-6 text-[24px] font-normal text-white jomolhari-regular">
@@ -250,7 +348,9 @@ function Navbar({ openPopup }) {
                 toggleDrawer();
                 if (item.action) item.action();
               }}
-              className="cursor-pointer hover:text-gray-300"
+              className={`cursor-pointer hover:text-gray-300 ${
+                item.link === pathname ? "border-b-2 border-white" : ""
+              }`}
             >
               {item.link ? <Link href={item.link}>{item.name}</Link> : item.name}
             </li>
@@ -258,6 +358,7 @@ function Navbar({ openPopup }) {
         </ul>
       </div>
 
+      {/* Drawer Overlay */}
       {drawerOpen && (
         <div
           className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-30"
