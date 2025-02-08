@@ -4,7 +4,7 @@ import Section2 from '../components/homepage/Section2'
 import Section3 from '../components/homepage/Section3'
 import Section4 from '../components/homepage/Section4'
 import Section5 from '../components/homepage/Section5'
-import Footer from '@/components/Footer'
+
 
 
 function page() {
