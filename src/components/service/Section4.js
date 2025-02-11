@@ -64,9 +64,9 @@ function Section4() {
          </div>
  
          <div
-           ref={(el) => (divRefs.current[0] = el)}
+           ref={(el) => (divRefs.current[1] = el)}
            className={`bg-[#0B3A4F] relative transition-all h-[210px] sm:h-[190px] py-6 sm:py-8 md:py-10 duration-700 ease-out transform ${
-             visible.has(0) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+             visible.has(1) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
            }`}
          >
            <img src="two.png" alt="" className="absolute left-4 sm:left-8 lg:left-10 top-4 sm:top-8 size-8 sm:size-auto" />
@@ -78,9 +78,9 @@ function Section4() {
          </div>
  
          <div
-           ref={(el) => (divRefs.current[0] = el)}
+           ref={(el) => (divRefs.current[2] = el)}
            className={`bg-[#0B3A4F] relative transition-all h-[210px] sm:h-[190px] py-6 sm:py-8 md:py-10 duration-700 ease-out transform ${
-             visible.has(0) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+             visible.has(2) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
            }`}
          >
            <img src="three.png" alt="" className="absolute left-4 sm:left-8 lg:left-10 top-4 sm:top-8 size-8 sm:size-auto" />

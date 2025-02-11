@@ -25,7 +25,8 @@
   }
 
 
-
+ 
+  /* background-images */
   
 .bg-img {
   background-image: url("/bg-img.png");
@@ -43,13 +44,21 @@
 }
   
 
-.section5-bg{
-  background-image: url("/bg-img.svg");
+/* .section5-bg{
+  background-image: url("/section5-bg.svg");
   background-repeat: no-repeat;
   background-size:cover;
-  background-position: center -280px;
+  background-position: center -480px;
 
+} */
+
+.section5-bg {
+  background-image: url("/section5-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:  center -480px; /* Moves left by 200px */
 }
+
 
 
 .section5-bg-img{
