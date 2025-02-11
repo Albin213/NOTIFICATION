@@ -75,3 +75,25 @@
   background-position: calc(100% + 40px) calc(100% + 40px); /* Move 40px more right and 40px down */
   background-size: contain;
 }
+
+
+
+.service-section1-bg {
+  background-image: url("/service-section1.svg");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center -120px; 
+  min-height: 100vh; /* Ensures it covers the full viewport height */
+  width: 100%; /* Ensures it spans the full width */
+}
+
+
+
+.service-section3-bg {
+  background-image: url("/service-section3.svg");
+  background-repeat: no-repeat;
+  background-position: right -120px; 
+
+
+
+}

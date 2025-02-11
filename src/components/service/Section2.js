@@ -3,10 +3,10 @@ import React from 'react'
 function Section2() {
   return (
     <div className='pt-20'>
-         <h1 className="font-normal text-[30px] sm:text-[40px] lg:text-[50px] text-[#222020] text-center jomolhari-regular">
+         <h1 className="font-normal text-[30px] sm:text-[40px]  xl::text-[50px] text-[#222020] text-center jomolhari-regular">
         What Is PI System Consulting?
       </h1>
-      <p className="text-[22px] sm:text-[26px] lg:text-[28px] font-normal leading-10 pt-8 md:pt-16 sm:px-8 xl:px-0 poppins-regular sm:text-justify capitalize">
+      <p className="text-[22px] sm:text-[26px] xl:text-[28px] font-normal leading-10 pt-8 xl:pt-16 sm:px-8 xl:px-0 poppins-regular lg:text-justify capitalize">
         We know the value of accurate, real-time data in maintaining efficient
         operation. Our OSIsoft PI System consulting services offer customized
         support across the lifecycle of your PI system, from initial setup and
