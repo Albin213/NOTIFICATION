@@ -290,16 +290,16 @@ function Navbar({ openPopup }) {
   };
 
   const navItems = [
-    { name: "Home", link: "/" },
-    { name: "About", link: "/about" },
-    { name: "Service", link: "/service" },
+    { name: "Home", link: "/Apttiv" },
+    { name: "About", link: "/Apttiv/about" },
+    { name: "Service", link: "/Apttiv/service" },
     { name: "Contact", action: openPopup }, // Open popup for "Contact"
   ];
 
   return (
     <div className="w-full">
       <div className="w-full h-[100px] bg-white flex items-center justify-between px-4 sm:px-[30px] lg:px-[74px] drop-shadow-md z-50">
-        <Link href={"/"}>
+        <Link href={"/Apttiv"}>
           <div className="font-normal text-[32px] text-[#181717] kadwa-regular cursor-pointer">
             Apttiv
           </div>

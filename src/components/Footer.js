@@ -43,7 +43,7 @@ function Footer({ openPopup }) {
           <h1 className="text-[#023347] text-[18px] xl:text-[26px] poppins-regular pb-2">
             Company
           </h1>
-          <Link href={"/about"}>
+          <Link href={"/Apttiv/about"}>
             <span className="text-[16px] xl:text-[18px] leading-3 text-black pt-6 cursor-pointer hover:underline">
               About
             </span>
